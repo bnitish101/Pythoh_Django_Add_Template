@@ -35,5 +35,5 @@ def test(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('baseApp.urls')),
-    path('test/', test, name = 'test'),
+    path('room/', test, name = 'test'),
 ]

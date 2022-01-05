@@ -18,8 +18,6 @@ from django.contrib import admin
 from django.http.response import HttpResponse
 from django.urls import path, include
 
-import baseApp
-
 # def home(request):
 #     return HttpResponse('Home Page')
 

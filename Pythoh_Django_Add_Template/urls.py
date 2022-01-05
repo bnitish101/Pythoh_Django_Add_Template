@@ -15,21 +15,25 @@ Including another URLconf
 """
 """ first comment 1 """
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
+from django.http.response import HttpResponse
+from django.urls import path, include
 
-def home(request):
-    return HttpResponse('Home Page')
+import baseApp
 
-def room(request):
-    return HttpResponse('Room Page')
+# def home(request):
+#     return HttpResponse('Home Page')
 
-def about(request):
-    return HttpResponse('This is abbout page.')
+# def room(request):
+#     return HttpResponse('Room Page')
+
+# def about(request):
+#     return HttpResponse('This is abbout page.')
+
+def test(request):
+    return HttpResponse('This is test url')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
-    path('room/', room),
-    path('about', about),
+    path('', include('baseApp.urls')),
+    path('test/', test, name = 'test'),
 ]

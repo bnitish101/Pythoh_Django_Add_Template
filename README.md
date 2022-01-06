@@ -1,3 +1,6 @@
+Day one:
+45 minutes completed 
+
 Django installation
 Configuration using cmd
 Check python version in the project directory : python
@@ -24,3 +27,11 @@ Template inhritance
 {% include ‘navbar.html’ %}
 {% extends ‘main.html’ %}
 {% block contents %} html code {% endblock %}
+
+
+Day Two:
+1:06:02 minutes completed 
+
+Day Three:
+
+Pass the data from view to templates

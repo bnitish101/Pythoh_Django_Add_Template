@@ -3,5 +3,13 @@
 {% block content %}
 
 <h1>Home Template</h1>
+<!-- {{ rooms }} -->
+{% for room in rooms %}
+<div>
+    <h1>
+        {{room.id}} -- {{room.name}}
+    </h1>
+</div>
+{% endfor %}
 
 {% endblock content %}

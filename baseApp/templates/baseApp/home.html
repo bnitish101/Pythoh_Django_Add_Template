@@ -9,6 +9,9 @@
     <h1>
         {{room.id}} -- <a href="/room/{{room.id}}"> {{room.name}} </a>
     </h1>
+    <h2>
+        {{room.id}} -- <a href="{% url 'room' room.id %}"> {{room.name}} </a> (Django templating engine: URL Using name key in routing) 
+    </h2>
 </div>
 {% endfor %}
 

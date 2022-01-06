@@ -9,7 +9,14 @@ rooms = [
 ]
 
 def home(request):
-    return render(request, 'home.html', {'rooms':rooms})
+    context = {'rooms' : rooms}
+    return render(request, 'baseApp/home.html', context) # this will render form base directory inside baseApp directory application
+    # return render(request, 'home.html', context)  # this will render form base directory project
+
+def homeFormProject(request):
+    context = {'rooms' : rooms}
+    # return render(request, 'baseApp/home.html', context) # this will render form base directory inside baseApp directory application
+    return render(request, 'home.html', context)  # this will render form base directory project
 
 def room(request):
     return render(request, 'room.html')

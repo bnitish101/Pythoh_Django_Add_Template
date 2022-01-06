@@ -18,8 +18,13 @@ def homeFormProject(request):
     # return render(request, 'baseApp/home.html', context) # this will render form base directory inside baseApp directory application
     return render(request, 'home.html', context)  # this will render form base directory project
 
-def room(request):
-    return render(request, 'room.html')
+def room(request, pk):
+    context = None
+    for room in rooms:
+        if room['id'] == int(pk):   # to get value form dic. we can use [] or get method
+            context = {'room': room.get('name')} # to get value form dic. we can use [] or get method
+        
+    return render(request, 'baseApp/room.html', context)
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'baseApp/about.html')

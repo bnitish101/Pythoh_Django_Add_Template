@@ -38,3 +38,4 @@ Pass the data from view to templates
 Aother way to do templating by creating html in appliaction instead of projects
 rule to create directory in application for html files
 creat templates directory and inside the direcoty must have dictory with the same name as appliction
+Passing values through URL in the routing, with data type

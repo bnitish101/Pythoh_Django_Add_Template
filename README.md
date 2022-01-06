@@ -40,3 +40,5 @@ rule to create directory in application for html files
 creat templates directory and inside the direcoty must have dictory with the same name as appliction
 Passing values through URL in the routing, with data type
 Explore name key words in routing, name key word value will not change even the url change that is why we should use name while calling urls
+
+In this we have coverd, how to do templatinng and routing in Django :-)
